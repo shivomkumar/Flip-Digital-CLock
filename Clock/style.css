@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: "Courier New", monospace;
+  }
+  
+  .clock {
+    display: flex;
+  }
+  
+  .flip {
+    margin: 0 5px;
+    width: 50px;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .flipping {
+    transform: rotateX(-90deg);
+  }
+  
